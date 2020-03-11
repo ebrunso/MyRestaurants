@@ -65,7 +65,7 @@ class MapsActivity : AppCompatActivity(), OnMapReadyCallback {
                 .fromResource(R.drawable.wendyslogo)))
 
         mMap.moveCamera(CameraUpdateFactory.newLatLng(marietta))
-
+        mMap.moveCamera(CameraUpdateFactory.zoomTo(12.0f))
     }
 
     private fun locateByReverseGeocoding(latLng: LatLng) : String {
